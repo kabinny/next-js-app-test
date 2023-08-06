@@ -1,3 +1,8 @@
 export default function Home() {
-  return <p>Hello, Nextjs!</p>
+  return (
+    <>
+      <h2>Welcome</h2>
+      <p>Hello, WEB!</p>
+    </>
+  )
 }
