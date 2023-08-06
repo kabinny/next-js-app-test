@@ -8,7 +8,9 @@ export const metadata = {
 }
 
 export default async function RootLayout({ children }) {
-  const response = await fetch('http://localhost:9999/topics')
+  const response = await fetch('http://localhost:9999/topics', {
+    cache: 'no-cache',
+  })
   const topics = await response.json()
 
   return (
