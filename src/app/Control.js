@@ -22,7 +22,7 @@ export function Control() {
               type="button"
               onClick={() => {
                 const options = { method: 'DELETE' }
-                fetch(`http://localhost:9999/topics/${id}`, options)
+                fetch(`${process.env.NEXT_PUBLIC_API_URL}topics/${id}`, options)
                   .then((response) => response.json())
                   .then((result) => {
                     router.push('/')
